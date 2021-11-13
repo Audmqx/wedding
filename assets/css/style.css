@@ -44,11 +44,15 @@ h1{
 body {
   background: var(--primary-bg-color);
   margin: 0;
-  padding: 0;
+  padding: 20px;
   color: #744538;
 }
 
 
+.main-wrapper{
+  opacity: 0;
+  transition:all ease 0.7s;
+}
 /*Preloader*/
 .preloader{
      position: fixed;
@@ -64,7 +68,7 @@ body {
   }
 
 #preloader_path {
-     fill:transparent;
+    fill:transparent;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 1.5s linear forwards;
@@ -83,8 +87,35 @@ body {
 #preloader_svg{
 	height: 50%;
 }
-
 /*end Preloader*/
+
+
+
+/*Animation Jas*/
+#jas_svg {
+    fill:transparent;
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    position: absolute;
+    width: 95%;
+}
+
+.draw {
+  animation: draw 1.5s linear forwards;
+}
+
+.jas-img-container{
+  position: relative;
+  margin-bottom: 20px;
+}
+.jas-img-container img{
+  width: 100%;
+  opacity: 0;
+  transition: all ease 1.5s;
+}
+/*END Animation Jas*/
+
+
 
  .header{
     padding-top: 20px;
@@ -93,13 +124,6 @@ body {
     background: linear-gradient(180deg, rgba(237,203,176,1) 0%, rgba(229,255,180,0) 100%);
   }
 
-@media  screen and (max-width : 600px) { 
-  .header{
-    padding-top: 20px;
-    height: 250px;
-    transition: all ease 1s;
-  }
-}
 
 .header #preloader_svg{
   height: 100%;
@@ -112,6 +136,7 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
@@ -124,6 +149,7 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .content-wrapper {
@@ -133,6 +159,15 @@ section{
   width: 100%;
   height: 100%;
   padding:30px;
+  border-radius: 5px;
+}
+
+/*section 1*/
+
+#hands-rose{
+      position: absolute;
+    height: 50%;
+    mix-blend-mode: soft-light;
 }
 
 /*Content porte*/
@@ -145,6 +180,10 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.content-porte {
+  padding: 20px;
 }
 
 .save-the-date{
@@ -166,16 +205,39 @@ letter-spacing: 6px;
   margin: 5px 0
 }
 
+/*
 .title-porte-el {
   font-size: clamp(14px, 2vw, 180%);
-}
+}*/
 
+
+/*Section 2*/
+.figure-jas{
+position: absolute;
+  bottom: -27px;
+  right: 0px;
+  z-index: 1;
+  margin: 0;
+  font-weight: bold;
+  mix-blend-mode: multiply;
+}
 
 /*Resp*/
 @media only all and (max-width: 460px){
-
+  .header{
+    height: 80px;
+  }
   .content-wrapper {
-    max-height: 80vh;
+    max-height: 60vh;
+    max-width: 80vw;
 }
+.content-wrapper {
+    padding: 15px;
+}
+
+.section-1 {
+  height: 380px;
+}
+
 
 }
