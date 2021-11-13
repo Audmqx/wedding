@@ -170,3 +170,12 @@ letter-spacing: 6px;
   font-size: clamp(14px, 2vw, 180%);
 }
 
+
+/*Resp*/
+@media only all and (max-width: 460px){
+
+  .content-wrapper {
+    max-height: 80vh;
+}
+
+}
