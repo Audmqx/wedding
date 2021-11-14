@@ -125,7 +125,7 @@ body {
     padding-top: 20px;
     height: 120px;
     transition: all ease 1s;
-    background: linear-gradient(180deg, var(--primary-bg-color), transparent );
+    /*background: linear-gradient(180deg, var(--primary-bg-color), transparent );*/
   }
 
 
@@ -144,7 +144,7 @@ footer {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
-  background: linear-gradient(0deg, var(--primary-bg-color), transparent);
+  /*background: linear-gradient(0deg, var(--primary-bg-color), transparent);*/
 }
 
 /*section*/
