@@ -18,6 +18,7 @@
 	<!-- end preloader -->
 	
 	<div class="main-wrapper">
+
  	<section id="section-1">
  		<div class="content-wrapper section-1">
  			<div class="porte-el">
@@ -68,21 +69,55 @@
 
  	 			<p>Découvrir le lieu, comment y accéder ainsi que les informations relatives blablabla</p>
  				<p class="uppercase sans">1610 D8, 83520 Roquebrune-sur-Argens</p>
+
+ 				<li class="content__item">
+					<button class="button button--surtur">
+						<svg class="textcircle" viewBox="0 0 500 500">
+							<title>Boutton cta</title>
+							<defs><path id="textcircle" d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+							/></defs>
+							<text><textPath xlink:href="#textcircle" aria-label="Projects & client work 2020" textLength="900">- Découvrir - Découvrir</textPath></text>
+						</svg>
+						<svg aria-hidden="true" class="eye" width="70" height="70" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+						    <path class="eye__outer" d="M10.5 35.308c5.227-7.98 14.248-13.252 24.5-13.252s19.273 5.271 24.5 13.252c-5.227 7.98-14.248 13.253-24.5 13.253s-19.273-5.272-24.5-13.253z"/>
+					        <path class="eye__lashes-up" d="M35 8.802v8.836M49.537 11.383l-3.31 8.192M20.522 11.684l3.31 8.192" />
+					        <path class="eye__lashes-down" d="M35 61.818v-8.836 8.836zM49.537 59.237l-3.31-8.193 3.31 8.193zM20.522 58.936l3.31-8.193-3.31 8.193z" />
+					        <circle class="eye__iris" cx="35" cy="35.31" r="5.221" />
+					        <circle class="eye__inner" cx="35" cy="35.31" r="10.041" />
+						</svg>
+					</button>
+				</li>
  	 		</div>
  	</section>
 
  	<section id="section-3">
- 		<h1> section 3 </h1>
+ 		<div class="content-wrapper section-3">
+ 			<h1>L'évènement</h1>
+ 			<p>Nous avons le plaisir de vous dévoiler le thème :</p>
+ 			<p class="script title-porte-el">Nature romantique</p>
+ 			 
+			<?php include 'views/components/hands_rose_blob.php'; ?>
+ 		</div>
  	</section>
 
  	<section id="section-4">
- 		<h1> section 4 </h1>
+ 		<div class="content-wrapper section-4">
+ 			<h1>Où dormir ?</h1>
+ 		</div>
  	</section>
+
+ 	 <section id="section-5">
+ 		<div class="content-wrapper section-5">
+ 			<h1>Cagnotte</h1>
+ 		</div>
+ 	</section>
+
+ 	</div>
+ <!-- 	end main wrapper -->
 
 	<footer>
 		<div id="countdown"></div>
 	</footer>
-	</div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>

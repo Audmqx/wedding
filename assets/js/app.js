@@ -53,11 +53,6 @@ var end = new Date('06/24/2022 2:00 PM');
 
 //Animation Jas SVG
 
-// gsap.to("#jas_svg", {
-//   scrollTrigger: "#jas_svg", // start the animation when ".box" enters the viewport (once)
-//   x: 50
-// });
-
 ScrollTrigger.create({
     trigger: '#section-2',
     start: '80% bottom',
@@ -74,15 +69,50 @@ ScrollTrigger.create({
 	        		})
     		}, false);
     	}, 1000);
-    }
-    // onUpdate: (self)=>{
-    //      console.log(self)
-    //      gsap.to("#jas_svg", {duration: 1, x: 100});
-    //         }
+    }//onenter
         });
 
 
 
-// el.addEventListener("animationstart", function() {}, false);
-// el.addEventListener("animationend", function() {}, false);
-// el.addEventListener("animationiteration", function() {}, false);
+// Animation oeil
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {
+	oeilScroll()
+};
+
+function oeilScroll() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+
+  document.querySelector(".textcircle").style.transform = "rotate("+scrolled+"deg)";
+}
+
+ScrollTrigger.create({
+    trigger: '.section-2',
+    start: '80% bottom',
+    end: '20% top',
+    onEnter: (e) => {
+    			document.querySelector('.eye__lashes-down').classList.add('blink-animation')
+
+    			document.querySelector('.eye__lashes-up').classList.add('blink-animation-2')
+    			document.querySelector('.eye__inner').classList.add('blink-animation-2')
+    			document.querySelector('.eye__iris').classList.add('blink-animation-2')
+    		},
+    onLeave: (e) =>{
+    			document.querySelector('.eye__lashes-down').classList.remove('blink-animation')
+
+    			document.querySelector('.eye__lashes-up').classList.remove('blink-animation-2')
+    			document.querySelector('.eye__inner').classList.remove('blink-animation-2')
+    			document.querySelector('.eye__iris').classList.remove('blink-animation-2')
+  			}
+        });
+
+// Animation section - 3 scroll
+let blob_1 = document.querySelector('.cls-4')
+let degre = 0;
+blob_1.addEventListener('click', function(e) {
+	 degre += 15;
+	this.style.transform = "rotate("+degre+"deg)";
+})
