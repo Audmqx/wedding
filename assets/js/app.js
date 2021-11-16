@@ -3,6 +3,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Preloader Animation
 document.addEventListener('DOMContentLoaded', (event) => {
+
+
+	let test = document.querySelector('.ribbonBox');
+	// alert(test) //NULL
     let preLoaderAnimation = document.getElementById('preloader_path')
 
     preLoaderAnimation.addEventListener("animationend", function(e) {
@@ -116,3 +120,4 @@ blob_1.addEventListener('click', function(e) {
 	 degre += 15;
 	this.style.transform = "rotate("+degre+"deg)";
 })
+

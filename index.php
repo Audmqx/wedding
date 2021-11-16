@@ -95,6 +95,7 @@
  			<h1>L'évènement</h1>
  			<p>Nous avons le plaisir de vous dévoiler le thème :</p>
  			<p class="script title-porte-el">Nature romantique</p>
+ 			<p>Découvrez les informations relatives à l'évènement : DressCode, Horaires...</p>
  			 
 			<?php include 'views/components/hands_rose_blob.php'; ?>
  		</div>
@@ -102,13 +103,20 @@
 
  	<section id="section-4">
  		<div class="content-wrapper section-4">
+ 			<div class="sleep_svg-wrapper">
+ 				<?php include 'views/components/dormir.php'; ?>
+ 				<div class="gooey"></div>
+ 			</div>
  			<h1>Où dormir ?</h1>
+ 			<p>Domaines, Gites, campings et hôtels, découvrez une liste de lieux ou vous pouvez vous reposer</p>
  		</div>
  	</section>
 
  	 <section id="section-5">
  		<div class="content-wrapper section-5">
  			<h1>Cagnotte</h1>
+ 			<a class="leetchi-widget-btn" href="http://www.leetchi.com/fr/c/wMBgdLY5"><img src="https://asset.leetchi.com/Content/Quenette/img/culture/fr/view/wizard/embed-btn.png?v=5035902d6d334122a60f4a6edb642d38"></a>
+ 			<a class="leetchi-widget" href="https://www.leetchi.com/widget/fr/wMBgdLY5">Participer à la cagnotte en ligne</a><script src="https://www.leetchi.com/Widget/Script.js"></script>
  		</div>
  	</section>
 
