@@ -518,6 +518,7 @@ iframe {
 
 #dormir_svg{
   width: 80%;
+  min-width: 350px;
 }
 
 @media only all and (max-width: 460px){
