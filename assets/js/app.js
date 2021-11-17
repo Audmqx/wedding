@@ -4,9 +4,6 @@ gsap.registerPlugin(ScrollTrigger);
 // Preloader Animation
 document.addEventListener('DOMContentLoaded', (event) => {
 
-
-	let test = document.querySelector('.ribbonBox');
-	// alert(test) //NULL
     let preLoaderAnimation = document.getElementById('preloader_path')
 
     preLoaderAnimation.addEventListener("animationend", function(e) {
@@ -21,6 +18,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     }, false);
 });
+
+
 
 
 // Countdown
@@ -113,6 +112,8 @@ ScrollTrigger.create({
   			}
         });
 
+
+
 // Animation section - 3 scroll
 let blob_1 = document.querySelector('.cls-4')
 let degre = 0;
@@ -121,3 +122,26 @@ blob_1.addEventListener('click', function(e) {
 	this.style.transform = "rotate("+degre+"deg)";
 })
 
+// Animation button cagnotte
+ScrollTrigger.create({
+    trigger: 'body',
+    start: '100% bottom',
+    end: '50% bottom',
+    onEnter: (e) => {
+
+                document.querySelector('.button--kari .marquee__inner').classList.add('animation-cagnotte')
+                // document.querySelector('toHide').style.opacity = 0;
+                 gsap.to('.toHide', {
+                    opacity: 0,
+                    duration: 0.5
+                })
+            },
+    // onLeave: (e) =>{
+    //             document.querySelector('.button--kari .marquee__inner').classList.remove('animation-cagnotte')
+    //             // document.querySelector('toHide').style.opacity = 0;
+    //              gsap.to('.toHide', {
+    //                 opacity: 1,
+    //                 duration: 0.5
+    //             })
+    //         }
+        });
