@@ -517,9 +517,9 @@ iframe {
 /*Section 4*/
 
 #dormir_svg{
- /* width: 80%;*/
-  /*min-width: 350px;*/
-  width: 350px;
+  width: 80%;
+  height: 100%;
+
 }
 
 @media only all and (max-width: 460px){
