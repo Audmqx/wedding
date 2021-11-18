@@ -17,7 +17,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	        })
 
     }, false);
+
 });
+
+window.onload = function () {
+    if (localStorage.getItem("hasCodeRunBefore") === null) {
+        /** Your code here. **/
+        console.log('FIRST')
+        localStorage.setItem("hasCodeRunBefore", true);
+    }
+    console.log('SECOND')
+}
 
 
 
@@ -81,7 +91,9 @@ ScrollTrigger.create({
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {
-	oeilScroll()
+      if (window.location.pathname == '/index.php') {
+        oeilScroll()   
+      }
 };
 
 function oeilScroll() {
@@ -92,23 +104,28 @@ function oeilScroll() {
   document.querySelector(".textcircle").style.transform = "rotate("+scrolled+"deg)";
 }
 
+
 ScrollTrigger.create({
     trigger: '.section-2',
     start: '80% bottom',
     end: '20% top',
     onEnter: (e) => {
+            if (window.location.pathname == '/index.php') {
     			document.querySelector('.eye__lashes-down').classList.add('blink-animation')
 
     			document.querySelector('.eye__lashes-up').classList.add('blink-animation-2')
     			document.querySelector('.eye__inner').classList.add('blink-animation-2')
     			document.querySelector('.eye__iris').classList.add('blink-animation-2')
+                }
     		},
     onLeave: (e) =>{
+                if (window.location.pathname == '/index.php') {
     			document.querySelector('.eye__lashes-down').classList.remove('blink-animation')
 
     			document.querySelector('.eye__lashes-up').classList.remove('blink-animation-2')
     			document.querySelector('.eye__inner').classList.remove('blink-animation-2')
     			document.querySelector('.eye__iris').classList.remove('blink-animation-2')
+                }
   			}
         });
 
@@ -145,3 +162,75 @@ ScrollTrigger.create({
     //             })
     //         }
         });
+
+
+//Barba js
+    barba.init({
+          transitions: [{
+            name: 'from-home-transition',
+            from: {
+                namespace: ["home"]
+            },
+            leave(data) {
+                console.log(data)
+              return gsap.to(data.current.container, {
+                opacity: 0
+              });
+            },
+            enter(data) {
+                console.log(data)
+              return gsap.from(data.next.container, {
+                opacity: 0
+              });
+            },
+
+            name: 'from-inside-page-transition',
+            from: {
+                namespace: ["inside"]
+            },
+            leave(data) {
+              //   console.log(data)
+              // return gsap.to(data.current.container, {
+              //   opacity: 0
+              // });
+              window.scrollTo(0, 0);
+                    return gsap.timeline()
+                    .to('.curtain',{
+                        duration: 0.3,
+                        y: 0
+                    })
+                    .to(data.current.container,{
+                        opacity: 0.
+                    })
+            },
+            enter(data) {
+                console.log(data)
+                console.log('heyy')
+               // then later in the code...
+                 gsap.to('.main-wrapper', {
+                    opacity: 1,
+                    duration: 0.5
+            })
+              return gsap.timeline()
+                .to('.curtain',{
+                    duration: 0.3,
+                    y: "-100%"
+                })
+                .from(data.next.container,{
+                    opacity: 0.
+                })
+            },
+
+
+          }]
+        });
+
+
+
+barba.hooks.leave(() => {
+  scrollX = barba.history.current.scroll.x;
+  scrollY = barba.history.current.scroll.y;
+  console.log('hiii')
+  window.scrollTo(0, 0);
+});
+
