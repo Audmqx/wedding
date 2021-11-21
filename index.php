@@ -10,18 +10,34 @@
 
 
 <body data-barba="wrapper">
-	<!-- begin preloader -->
-	<div class="preloader">
+	
+<!-- 	<main data-barba="container" data-barba-namespace="home"> -->
+	
+	<div class="header">
 		<a href="/index.php" style="height: 100%;">
 		<?php include 'views/components/logo.php'; ?> 
 		</a>
+
+		<div class="frame">
+			<div class="frame__button">
+				<button class="unbutton button-menu" aria-label="Open menu">
+					Menu
+				</button>
+			</div>
+		</div>
 	</div>
-	<!-- end preloader -->
 
 
-	 <main data-barba="container" data-barba-namespace="home">
-	
+
+
 	<div class="main-wrapper">
+
+	<div class="content">
+			<h2 class="content__title">
+				<span class="content__title-main"></span>
+				<span class="content__title-sub"></span>
+			</h2>
+	</div>
 
  	<section id="section-1">
  		<div class="content-wrapper section-1">
@@ -74,7 +90,7 @@
  	 			<p>Découvrir le lieu, comment y accéder ainsi que les informations relatives blablabla</p>
  			<!-- 	<p class="uppercase sans">1610 D8, 83520 Roquebrune-sur-Argens</p> -->
 
- 				<a href="/pages/lieu.php">
+ 				<a class="use-custom-transition" href="/lieu.php">
 	 				<li class="content__item">
 						<button class="button button--surtur">
 							<svg class="textcircle" viewBox="0 0 500 500">
@@ -103,9 +119,11 @@
 	 			<p>Nous avons le plaisir de vous dévoiler le thème :</p>
 	 			<p class="script title-porte-el">Nature romantique</p>
 	 			<p>Découvrez les informations relatives à l'évènement :</p>
+	 			<a href="/evenement.php">
 	 			<button id="myClip">
 	 				<span class="btn-text">En savoir plus</span>
 	 			</button>
+	 			</a>
  			 </div>
 
  			 <div>
@@ -124,7 +142,8 @@
  			<h1 style="margin-top: 0;">Où dormir ?</h1>
  			<p>Domaines, Gites, campings et hôtels, découvrez une liste de lieux ou vous pouvez vous reposer</p>
 
- 			<li class="content__item">
+ 			<a href="/dormir.php">
+ 				<li class="content__item">
 					<button class="button button--surtur">
 						<svg class="textcircle" viewBox="0 0 500 500">
 							<title>Boutton cta</title>
@@ -141,6 +160,7 @@
 						</svg>
 					</button>
 				</li>
+			</a>
  		</div>
  	</section>
 
@@ -149,7 +169,7 @@
  			<h1>Cagnotte</h1>
  			<a class="leetchi-widget-btn" href="http://www.leetchi.com/fr/c/wMBgdLY5">	
 					<button class="button button--kari">
-						<span class="toHide">Send Love</span>
+						<span class="toHide-1">Send Love</span>
 						<div class="marquee" aria-hidden="true">
 							<div class="marquee__inner">
 								<span>Send Love</span>
@@ -166,12 +186,15 @@
  	</div>
  <!-- 	end main wrapper -->
 
- </main>
+<?php include 'views/components/menu.php'; ?>
 
- 	<div class="curtain">
+<!-- </main> -->
 
+
+ 	<div class="preloader">
+ 		<?php include 'views/components/logo.php'; ?> 
  	</div>
- 	
+
 	<footer>
 		<div id="countdown"></div>
 	</footer>
@@ -180,11 +203,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>	
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-    <script src="assets/js/app.js"></script> 
-
-    <script>
-   
-    </script>
+    <script class="main-script" src="assets/js/app.js"></script> 
 </body>
 
 

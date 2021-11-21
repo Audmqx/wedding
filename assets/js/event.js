@@ -68,105 +68,6 @@ var end = new Date('06/24/2022 2:00 PM');
 
 //Animation Jas SVG
 
-ScrollTrigger.create({
-    trigger: '#section-2',
-    start: '80% bottom',
-    end: '20% top',
-    onEnter: (e) => {
-    	let jasSvg = document.querySelector('#jas_svg');
-    	jasSvg .classList.add('draw')
-    	setTimeout(function() {
-    		document.querySelector('.jas-img').style.opacity = "1";
-    			jasSvg .addEventListener("animationend", function() {
-    			gsap.to(jasSvg, {
-	                opacity: 0,
-	                duration: 0.5
-	        		})
-    		}, false);
-    	}, 1000);
-    }//onenter
-        });
-
-
-
-// Animation oeil
-
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {
-      if (window.location.pathname == '/index.php') {
-        oeilScroll()   
-      }
-};
-
-function oeilScroll() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-
-  document.querySelector(".textcircle").style.transform = "rotate("+scrolled+"deg)";
-}
-
-
-ScrollTrigger.create({
-    trigger: '.section-2',
-    start: '80% bottom',
-    end: '20% top',
-    onEnter: (e) => {
-            if (window.location.pathname == '/index.php') {
-    			document.querySelector('.eye__lashes-down').classList.add('blink-animation')
-
-    			document.querySelector('.eye__lashes-up').classList.add('blink-animation-2')
-    			document.querySelector('.eye__inner').classList.add('blink-animation-2')
-    			document.querySelector('.eye__iris').classList.add('blink-animation-2')
-                }
-    		},
-    onLeave: (e) =>{
-                if (window.location.pathname == '/index.php') {
-    			document.querySelector('.eye__lashes-down').classList.remove('blink-animation')
-
-    			document.querySelector('.eye__lashes-up').classList.remove('blink-animation-2')
-    			document.querySelector('.eye__inner').classList.remove('blink-animation-2')
-    			document.querySelector('.eye__iris').classList.remove('blink-animation-2')
-                }
-  			}
-        });
-
-
-
-// Animation section - 3 scroll
-
-// let blob_1 = document.querySelector('.cls-4')
-// let degre = 0;
-// blob_1.addEventListener('click', function(e) {
-// 	 degre += 15;
-// 	this.style.transform = "rotate("+degre+"deg)";
-// })
-
-// Animation button cagnotte
-ScrollTrigger.create({
-    trigger: 'body',
-    start: '100% bottom',
-    end: '50% bottom',
-    onEnter: (e) => {
-
-                document.querySelector('.button--kari .marquee__inner').classList.add('animation-cagnotte')
-                // document.querySelector('toHide').style.opacity = 0;
-                 gsap.to('.toHide-1', {
-                    opacity: 0,
-                    duration: 0.5
-                })
-            },
-    // onLeave: (e) =>{
-    //             document.querySelector('.button--kari .marquee__inner').classList.remove('animation-cagnotte')
-    //             // document.querySelector('toHide').style.opacity = 0;
-    //              gsap.to('.toHide', {
-    //                 opacity: 1,
-    //                 duration: 0.5
-    //             })
-    //         }
-        });
-
-
 
 
 // Menu
@@ -333,6 +234,17 @@ openMenuCtrl.addEventListener('click', openMenu);
 closeMenuCtrl.addEventListener('click', closeMenu);
 
 //code couleur 
-document.querySelector('.code-couleur').addEventListener('click', function(){
-    console.log('ok')
+let codeCouleur = document.querySelectorAll('.code-couleur');
+
+codeCouleur.forEach(function(item){
+    item.addEventListener('click', function(e){
+        if ( this.classList.contains('couleur-animation')) {
+        this.classList.remove('couleur-animation')
+     } else {
+         this.classList.add('couleur-animation')
+     }
+    })
 })
+
+
+
