@@ -15,10 +15,10 @@
 
 	        <div class="header">
 
-	        	<a class="go-back" href="/index.php">Accueil</a>
+	        	<a class="go-back" href="/index">Accueil</a>
 
 
-				<a href="/index.php" style="height: 100%;">
+				<a href="/index" style="height: 100%;">
 				<?php include 'views/components/logo.php'; ?> 
 				</a>
 
@@ -34,33 +34,32 @@
 	         <div class="lieu-container">
 	           	<h1>L'évènement</h1>
 
-	           	<p>Soyez présent le 24 Juin 2022 avec nous pour fêter notre mariage</p>
-	           	<p>blablablaba:</p>
+	           	<p style="text-align: center;">Venez célébrer notre mariage sur le thème :</p>
 
-	           	<p class="uppercase sans"><strong>thème</strong></p>
-	           	<p>Notre thème sera : Nature romantique</p>
+	           	<!-- <p class="uppercase sans"><strong>thème</strong></p>
+	           	<p>Notre thème sera : Nature romantique</p> -->
 	           	<img src="assets/img/theme.svg">
 
-	           	<p class="uppercase sans"><strong>DRESSCODE</strong></p>
-	           	<p>La couleure blanche est réservée pour la mariée !</p>
+	           	<p class="uppercase sans" style="margin-top: 60px"><strong>DRESSCODE</strong></p>
 
-	           	<p>Privilégiez les couleurs camaïeux je ne sais pas texte à modifier mdr</p>
+	           	<p>Privilégiez les couleurs claires</p>
 	           	<div class="code-couleur-wrapper">
 	           		<div class="code-couleur cc-1"><span class="hide">Papaye</span></div>
 	           		<div class="code-couleur cc-2"><span class="hide">Lin</span></div>
 	           		<div class="code-couleur cc-3"><span class="hide">Lavande</span></div>
 	           		<div class="code-couleur cc-4"><span class="hide">Champagne rose</span></div>
 	           		<div class="code-couleur cc-5"><span class="hide">Ivoire</span></div>
-	           		<div class="code-couleur cc-6"><span class="hide">Crème</span></div>
+	           		<div class="code-couleur cc-6"><span class="hide">Creme</span></div>
 	           		<div class="code-couleur cc-7"><span class="hide">Cultured</span></div>
 	           		<div class="code-couleur cc-8"><span class="hide">Ton de lin</span></div>
 	           		<div class="code-couleur cc-9"><span class="hide">Champagne rose</span></div>
 	           		<div class="code-couleur cc-10"><span class="hide">Champagne profond</span></div>
 	           	</div>
+	           	<p>La couleur blanche est réservée pour la mariée !</p>
 
-	           	<p class="uppercase sans"><strong>Programme</strong></p>
-	           	<p>Vous êtes convié à venir pour 16h</p>
-	           	<p>Le programme sera disponible à venir.</p>
+	           	<p class="uppercase sans" style="margin-top: 60px"><strong>Programme</strong></p>
+	           	<p>Vous êtes conviés à la cérémonie qui débutera à 16h</p>
+	           	<p>Le programme sera disponible bientôt.</p>
  			</div> 	
         </div>
         <!-- Unchanged Content -->

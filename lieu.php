@@ -15,10 +15,10 @@
 
         <div class="header">
 
-        	<a class="go-back" href="/index.php">Accueil</a>
+        	<a class="go-back" href="/index">Accueil</a>
 
 
-			<a href="/index.php" style="height: 100%;">
+			<a href="/index" style="height: 100%;">
 			<?php include 'views/components/logo.php'; ?> 
 			</a>
 
@@ -59,7 +59,7 @@
 					</li>
 	 			</ul>
 
-	 			<p>Une fois arrivé pénétrez dans le domaine pour vous garer.</p>
+	 			<p>Le jas du Pébrier dispose d'un parking.</p>
 
 	 			<div class="waze-wrapper">
 		 			<p style="display:flex;align-items: center;"><img src="assets/img/waze.png" style="width:50px;height:50px; margin-right: 10px;"> Si vous avez Waze d'installé pour vous pouvez scanner le code qr ci-dessous ou bien cliquer dessus pour avoir la destination.</p>

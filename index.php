@@ -14,7 +14,7 @@
 <!-- 	<main data-barba="container" data-barba-namespace="home"> -->
 	
 	<div class="header">
-		<a href="/index.php" style="height: 100%;">
+		<a href="/index" style="height: 100%;">
 		<?php include 'views/components/logo.php'; ?> 
 		</a>
 
@@ -53,12 +53,14 @@
  					</div>
 
  					<h1 class="script title-porte-el">Audrey et Maxim</h1>
- 					<p>Vous invitent avec plaisir à les rejoindre pour célébrer leur mariage</p>
+ 					<p>ont le plaisir de vous inviter à leur mariage</p>
  					<p>Le Vendredi, 24 Juin 2022 à 16h00</p>
+
+ 					<img src="/assets/img/kiss-r.jpg">
  				</div>
  			</div>
  		</div>
- 		<?php include 'views/components/hands_rose.php'; ?>
+ 		<!-- <?php include 'views/components/hands_rose.php'; ?> -->
  	</section>
 
  	 	<section id="section-2">
@@ -87,7 +89,7 @@
 
  	 			<h1>Le Lieu</h1>
 
- 	 			<p>Découvrir le lieu, comment y accéder ainsi que les informations relatives blablabla</p>
+ 	 			<p>Découvrir notre lieu de récéption</p>
  			<!-- 	<p class="uppercase sans">1610 D8, 83520 Roquebrune-sur-Argens</p> -->
 
  				<a class="use-custom-transition" href="/lieu.php">
@@ -140,7 +142,7 @@
  				<div class="gooey"></div>
  			</div>
  			<h1 style="margin-top: 0;">Où dormir ?</h1>
- 			<p>Domaines, Gites, campings et hôtels, découvrez une liste de lieux ou vous pouvez vous reposer</p>
+ 			<p>Domaines, Gites, campings et hôtels, découvrez une liste de lieux si vous souhaitez dormir sur place</p>
 
  			<a href="/dormir.php">
  				<li class="content__item">
@@ -167,6 +169,7 @@
  	 <section id="section-5">
  		<div class="content-wrapper section-5">
  			<h1>Cagnotte</h1>
+ 			<p style="text-align: center;">Nous ne faisons pas de liste de mariage, mais vous pouvez participer à notre cagnotte si vous le souhaitez 🤎</p>
  			<a class="leetchi-widget-btn" href="http://www.leetchi.com/fr/c/wMBgdLY5">	
 					<button class="button button--kari">
 						<span class="toHide-1">Send Love</span>
@@ -193,6 +196,7 @@
 
  	<div class="preloader">
  		<?php include 'views/components/logo.php'; ?> 
+ 	
  	</div>
 
 	<footer>

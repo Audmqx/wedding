@@ -15,10 +15,10 @@
 
         <div class="header">
 
-        	<a class="go-back" href="/index.php">Accueil</a>
+        	<a class="go-back" href="/index">Accueil</a>
 
 
-			<a href="/index.php" style="height: 100%;">
+			<a href="/index" style="height: 100%;">
 			<?php include 'views/components/logo.php'; ?> 
 			</a>
 
@@ -37,10 +37,10 @@
 
 	           	<p>Sur la carte ci-dessous, vous pouvez vous déplacer tout autour du Jas du Pébrier, chaque point rose avec un lit dessus est un endroit ou pouvez dormir</p>
 
-	 			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1OmGV_Qh2nu0mUPPUO8w-WpageSPCo-RO" width="640" height="480"></iframe>
+	 			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1OmGV_Qh2nu0mUPPUO8w-WpageSPCo-RO" width="auto" height="480"></iframe>
 
 
-	 			<p>Une liste non exaustive de lieu ou vous pouvez dormir :</p>
+	 			<p>Une liste non exhaustive de lieux où vous pouvez dormir :</p>
 	 			<ul>
 	 				<li>
 	 				<a href="https://villa-35.com/" target="_blank">Villa-35, chambre d'hôte
@@ -63,11 +63,11 @@
 					</li>
 
 					<li>
-	 				<p>N'hésitez pas à regarder AirBnb, des biens à louer sont posté souvent comme ce mas.
+	 				<p>N'hésitez pas à regarder AirBnb, des biens à louer sont postés souvent comme ce mas.
 	 					<span><br>1min en voiture</span>
-	 					<div class="airbnb-embed-frame" data-id="25658711" data-view="home" style="width:450px;height:300px;"><a href="https://www.airbnb.fr/rooms/25658711?check_in=2022-06-24&amp;check_out=2022-06-25&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">Voir sur Airbnb</a><a href="https://www.airbnb.fr/rooms/25658711?check_in=2022-06-24&amp;check_out=2022-06-25&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Mas du domaine de l&#x27;Orme</a><script async="" src="https://www.airbnb.fr/embeddable/airbnb_jssdk"></script></div>
 					</li>
 	 			</ul>
+	 			<div class="airbnb-embed-frame" data-id="25658711" data-view="home" style="width:auto;height:300px;"><a href="https://www.airbnb.fr/rooms/25658711?check_in=2022-06-24&amp;check_out=2022-06-25&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">Voir sur Airbnb</a><a href="https://www.airbnb.fr/rooms/25658711?check_in=2022-06-24&amp;check_out=2022-06-25&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Mas du domaine de l&#x27;Orme</a><script async="" src="https://www.airbnb.fr/embeddable/airbnb_jssdk"></script></div>
 	 				<div class="sleep_svg-wrapper" style="width: fit-content;float: right;">
  				<?php include 'views/components/dormir.php'; ?>
  				<div class="gooey"></div>

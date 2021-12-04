@@ -1,5 +1,31 @@
 gsap.registerPlugin(ScrollTrigger);
 
+// Scroll up scroll down
+
+var lastScrollTop = 0;
+let header = document.querySelector('.header');
+
+// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+   var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+   if (st > lastScrollTop){
+      // downscroll code
+      console.log('scrolled up')
+       if (!header.classList.contains('down')) {
+        header.classList.remove('up');
+        header.classList.add('down');
+      }
+   } else {
+      // upscroll code
+      console.log('scrolled down')
+      if (!header.classList.contains('up')) {
+        header.classList.remove('down');
+        header.classList.add('up');
+      }
+   }
+   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}, false);
+
 
 // Preloader Animation
 document.addEventListener('DOMContentLoaded', (event) => {

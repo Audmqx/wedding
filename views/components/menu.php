@@ -1,45 +1,21 @@
 <main id="menu-wrapper">
 		<div class="menu-wrap">
 			<div class="tiles">
-				<div class="tiles__line">
-					<div class="tiles__line-img tiles__line-img--large" style="background-image:url(assets/img/nous/5.jpg)"></div>
-					<div class="tiles__line-img" style="background-image:url(assets/img/nous/4.jpg)"></div>
-					<div class="tiles__line-img" style="background-image:url(assets/img/nous/7.jpg)"></div>
-					<div class="tiles__line-img tiles__line-img--large" style="background-image:url(assets/img/nous/5.jpg)"></div>
-					<div class="tiles__line-img" style="background-image:url(assets/img/nous/4.jpg)"></div>
-					<div class="tiles__line-img" style="background-image:url(assets/img/nous/7.jpg)"></div>
-				</div>
-				<div class="tiles__line">
-					<div class="tiles__line-img" style="background-image:url(assets/img/nous/8.jpg)"></div>
-					<div class="tiles__line-img" style="background-image:url(assets/img/nous/2.jpg)"></div>
-					<div class="tiles__line-img tiles__line-img--large" style="background-image:url(assets/img/nous/3.jpg)"></div>
-					<div class="tiles__line-img" style="background-image:url(assets/img/nous/8.jpg)"></div>
-					<div class="tiles__line-img" style="background-image:url(assets/img/nous/2.jpg)"></div>
-					<div class="tiles__line-img tiles__line-img--large" style="background-image:url(assets/img/nous/3.jpg)"></div>
-				</div>
-				<div class="tiles__line">
-					<div class="tiles__line-img" style="background-image:url(assets/img/nous/1.jpg)"></div>
-					<div class="tiles__line-img tiles__line-img--large" style="background-image:url(assets/img/nous/6.jpg)"></div>
-					<div class="tiles__line-img" style="background-image:url(assets/img/nous/9.jpg)"></div>
-					<div class="tiles__line-img" style="background-image:url(assets/img/nous/1.jpg)"></div>
-					<div class="tiles__line-img tiles__line-img--large" style="background-image:url(assets/img/nous/6.jpg)"></div>
-					<div class="tiles__line-img" style="background-image:url(assets/img/nous/9.jpg)"></div>
-				</div>
 			</div>
 			<nav class="menu">
-				<a class="menu__item" href="/index.php">
+				<a class="menu__item" href="/index">
 					<!-- <span class="menu__item-tiny">Le lieu</span> -->
 					<span class="menu__item-text">Accueil</span>
 				</a>
-				<a class="menu__item" href="/lieu.php">
+				<a class="menu__item" href="/lieu">
 					<!-- <span class="menu__item-tiny">Le lieu</span> -->
 					<span class="menu__item-text">Le lieu</span>
 				</a>
-				<a class="menu__item" href="/evenement.php">
+				<a class="menu__item" href="/evenement">
 					<span class="menu__item-text">L'évènement</span>
 					<!-- <span class="menu__item-tiny">L'évènement</span> -->
 				</a>
-				<a class="menu__item" href="/dormir.php">
+				<a class="menu__item" href="/dormir">
 					<!-- <span class="menu__item-tiny">Où dormir?</span> -->
 					<span class="menu__item-text">Où dormir ?</span>
 				</a>
